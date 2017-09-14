@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		044AC1D71F6B3CD50094E476 /* OTSortButton.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 044AC1D31F6B39140094E476 /* OTSortButton.framework */; };
+		044AC1D81F6B3CD50094E476 /* OTSortButton.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 044AC1D31F6B39140094E476 /* OTSortButton.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		04F65AB61F6AA63800CDB097 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F65AB51F6AA63800CDB097 /* AppDelegate.swift */; };
 		04F65ABB1F6AA63800CDB097 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04F65AB91F6AA63800CDB097 /* Main.storyboard */; };
 		04F65ABD1F6AA63800CDB097 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04F65ABC1F6AA63800CDB097 /* Assets.xcassets */; };
@@ -56,6 +58,13 @@
 			remoteGlobalIDString = 04F65A981F6AA60500CDB097;
 			remoteInfo = OTSortButtonTests;
 		};
+		044AC1D91F6B3CD50094E476 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 044AC1CD1F6B39140094E476 /* OTSortButton.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 04F65A8E1F6AA60400CDB097;
+			remoteInfo = OTSortButton;
+		};
 		04F65AC71F6AA63800CDB097 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 04F65AAA1F6AA63800CDB097 /* Project object */;
@@ -79,6 +88,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
+				044AC1D81F6B3CD50094E476 /* OTSortButton.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -114,6 +124,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				044AC1D71F6B3CD50094E476 /* OTSortButton.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -249,6 +260,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				044AC1DA1F6B3CD50094E476 /* PBXTargetDependency */,
 			);
 			name = DemoApplication;
 			productName = DemoApplication;
@@ -444,6 +456,11 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		044AC1DA1F6B3CD50094E476 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = OTSortButton;
+			targetProxy = 044AC1D91F6B3CD50094E476 /* PBXContainerItemProxy */;
+		};
 		04F65AC81F6AA63800CDB097 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 04F65AB11F6AA63800CDB097 /* DemoApplication */;
