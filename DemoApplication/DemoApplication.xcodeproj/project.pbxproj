@@ -13,8 +13,6 @@
 		04F65AC01F6AA63800CDB097 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04F65ABE1F6AA63800CDB097 /* LaunchScreen.storyboard */; };
 		04F65ACB1F6AA63800CDB097 /* DemoApplicationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F65ACA1F6AA63800CDB097 /* DemoApplicationTests.swift */; };
 		04F65AD61F6AA63800CDB097 /* DemoApplicationUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F65AD51F6AA63800CDB097 /* DemoApplicationUITests.swift */; };
-		04F65AF71F6AA90700CDB097 /* OTSortButton.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 04F65AE91F6AA64100CDB097 /* OTSortButton.framework */; };
-		04F65AF81F6AA90700CDB097 /* OTSortButton.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 04F65AE91F6AA64100CDB097 /* OTSortButton.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		04F65AFE1F6AAD1500CDB097 /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04F65AFD1F6AAD1500CDB097 /* ViewController.xib */; };
 		04F65AFF1F6AAD1500CDB097 /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04F65AFD1F6AAD1500CDB097 /* ViewController.xib */; };
 		04F65B001F6AAD1500CDB097 /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04F65AFD1F6AAD1500CDB097 /* ViewController.xib */; };
@@ -44,6 +42,20 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		044AC1D21F6B39140094E476 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 044AC1CD1F6B39140094E476 /* OTSortButton.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 04F65A8F1F6AA60400CDB097;
+			remoteInfo = OTSortButton;
+		};
+		044AC1D41F6B39140094E476 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 044AC1CD1F6B39140094E476 /* OTSortButton.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 04F65A981F6AA60500CDB097;
+			remoteInfo = OTSortButtonTests;
+		};
 		04F65AC71F6AA63800CDB097 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 04F65AAA1F6AA63800CDB097 /* Project object */;
@@ -58,27 +70,6 @@
 			remoteGlobalIDString = 04F65AB11F6AA63800CDB097;
 			remoteInfo = DemoApplication;
 		};
-		04F65AE81F6AA64100CDB097 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 04F65AE31F6AA64000CDB097 /* OTSortButton.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 04F65A8F1F6AA60400CDB097;
-			remoteInfo = OTSortButton;
-		};
-		04F65AEA1F6AA64100CDB097 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 04F65AE31F6AA64000CDB097 /* OTSortButton.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 04F65A981F6AA60500CDB097;
-			remoteInfo = OTSortButtonTests;
-		};
-		04F65AF91F6AA90700CDB097 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 04F65AE31F6AA64000CDB097 /* OTSortButton.xcodeproj */;
-			proxyType = 1;
-			remoteGlobalIDString = 04F65A8E1F6AA60400CDB097;
-			remoteInfo = OTSortButton;
-		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -88,7 +79,6 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				04F65AF81F6AA90700CDB097 /* OTSortButton.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -96,6 +86,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		044AC1CD1F6B39140094E476 /* OTSortButton.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = OTSortButton.xcodeproj; path = ../OTSortButton.xcodeproj; sourceTree = "<group>"; };
 		04F65AB21F6AA63800CDB097 /* DemoApplication.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DemoApplication.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		04F65AB51F6AA63800CDB097 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		04F65ABA1F6AA63800CDB097 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -108,7 +99,6 @@
 		04F65AD11F6AA63800CDB097 /* DemoApplicationUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DemoApplicationUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		04F65AD51F6AA63800CDB097 /* DemoApplicationUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemoApplicationUITests.swift; sourceTree = "<group>"; };
 		04F65AD71F6AA63800CDB097 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		04F65AE31F6AA64000CDB097 /* OTSortButton.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = OTSortButton.xcodeproj; path = ../OTSortButton/OTSortButton.xcodeproj; sourceTree = "<group>"; };
 		04F65AFD1F6AAD1500CDB097 /* ViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = ViewController.xib; path = ViewController/ViewController.xib; sourceTree = "<group>"; };
 		04F65B011F6AAD2600CDB097 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ViewController.swift; path = ViewController/ViewController.swift; sourceTree = "<group>"; };
 		04F65B0A1F6AAD5A00CDB097 /* TableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TableViewCell.swift; path = ViewController/Cell/TableViewCell.swift; sourceTree = "<group>"; };
@@ -124,7 +114,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				04F65AF71F6AA90700CDB097 /* OTSortButton.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -145,6 +134,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		044AC1CE1F6B39140094E476 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				044AC1D31F6B39140094E476 /* OTSortButton.framework */,
+				044AC1D51F6B39140094E476 /* OTSortButtonTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 		04F65AA91F6AA63800CDB097 = {
 			isa = PBXGroup;
 			children = (
@@ -152,7 +150,7 @@
 				04F65AC91F6AA63800CDB097 /* DemoApplicationTests */,
 				04F65AD41F6AA63800CDB097 /* DemoApplicationUITests */,
 				04F65AB31F6AA63800CDB097 /* Products */,
-				04F65AE31F6AA64000CDB097 /* OTSortButton.xcodeproj */,
+				044AC1CD1F6B39140094E476 /* OTSortButton.xcodeproj */,
 			);
 			sourceTree = "<group>";
 		};
@@ -197,15 +195,6 @@
 				04F65AD71F6AA63800CDB097 /* Info.plist */,
 			);
 			path = DemoApplicationUITests;
-			sourceTree = "<group>";
-		};
-		04F65AE41F6AA64000CDB097 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				04F65AE91F6AA64100CDB097 /* OTSortButton.framework */,
-				04F65AEB1F6AA64100CDB097 /* OTSortButtonTests.xctest */,
-			);
-			name = Products;
 			sourceTree = "<group>";
 		};
 		04F65AFC1F6AACF700CDB097 /* ViewController */ = {
@@ -260,7 +249,6 @@
 			buildRules = (
 			);
 			dependencies = (
-				04F65AFA1F6AA90700CDB097 /* PBXTargetDependency */,
 			);
 			name = DemoApplication;
 			productName = DemoApplication;
@@ -345,8 +333,8 @@
 			projectDirPath = "";
 			projectReferences = (
 				{
-					ProductGroup = 04F65AE41F6AA64000CDB097 /* Products */;
-					ProjectRef = 04F65AE31F6AA64000CDB097 /* OTSortButton.xcodeproj */;
+					ProductGroup = 044AC1CE1F6B39140094E476 /* Products */;
+					ProjectRef = 044AC1CD1F6B39140094E476 /* OTSortButton.xcodeproj */;
 				},
 			);
 			projectRoot = "";
@@ -359,18 +347,18 @@
 /* End PBXProject section */
 
 /* Begin PBXReferenceProxy section */
-		04F65AE91F6AA64100CDB097 /* OTSortButton.framework */ = {
+		044AC1D31F6B39140094E476 /* OTSortButton.framework */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.framework;
 			path = OTSortButton.framework;
-			remoteRef = 04F65AE81F6AA64100CDB097 /* PBXContainerItemProxy */;
+			remoteRef = 044AC1D21F6B39140094E476 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		04F65AEB1F6AA64100CDB097 /* OTSortButtonTests.xctest */ = {
+		044AC1D51F6B39140094E476 /* OTSortButtonTests.xctest */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.cfbundle;
 			path = OTSortButtonTests.xctest;
-			remoteRef = 04F65AEA1F6AA64100CDB097 /* PBXContainerItemProxy */;
+			remoteRef = 044AC1D41F6B39140094E476 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 /* End PBXReferenceProxy section */
@@ -466,11 +454,6 @@
 			target = 04F65AB11F6AA63800CDB097 /* DemoApplication */;
 			targetProxy = 04F65AD21F6AA63800CDB097 /* PBXContainerItemProxy */;
 		};
-		04F65AFA1F6AA90700CDB097 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = OTSortButton;
-			targetProxy = 04F65AF91F6AA90700CDB097 /* PBXContainerItemProxy */;
-		};
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
@@ -534,7 +517,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -579,7 +562,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
@@ -693,6 +676,7 @@
 				04F65ADC1F6AA63800CDB097 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		04F65ADD1F6AA63800CDB097 /* Build configuration list for PBXNativeTarget "DemoApplicationTests" */ = {
 			isa = XCConfigurationList;
@@ -701,6 +685,7 @@
 				04F65ADF1F6AA63800CDB097 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		04F65AE01F6AA63800CDB097 /* Build configuration list for PBXNativeTarget "DemoApplicationUITests" */ = {
 			isa = XCConfigurationList;
@@ -709,6 +694,7 @@
 				04F65AE21F6AA63800CDB097 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
