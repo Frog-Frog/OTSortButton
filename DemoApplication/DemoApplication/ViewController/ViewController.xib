@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ViewController" customModule="DemoApplication" customModuleProvider="target">
+            <connections>
+                <outlet property="centerSortButton" destination="ig2-eN-4fB" id="RWe-RE-69V"/>
+                <outlet property="leftSortButton" destination="EWw-Gq-SGx" id="Gfg-nZ-vDd"/>
+                <outlet property="rightSortButton" destination="gKP-jp-w51" id="Ka3-lV-tn1"/>
+                <outlet property="tableView" destination="PpK-Oc-5xn" id="7Ci-Gs-yVD"/>
+                <outlet property="view" destination="iN0-l3-epB" id="5NP-W7-lWb"/>
+                <outletCollection property="sortButtonCollection" destination="EWw-Gq-SGx" collectionClass="NSMutableArray" id="4R1-nt-hd4"/>
+                <outletCollection property="sortButtonCollection" destination="ig2-eN-4fB" collectionClass="NSMutableArray" id="z0m-Xr-1GB"/>
+                <outletCollection property="sortButtonCollection" destination="gKP-jp-w51" collectionClass="NSMutableArray" id="OaM-6s-YTM"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tVJ-Sn-IRf">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="64"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="OTSortButtonDemo" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="T2k-0W-t6M">
+                            <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                            <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" red="0.2470588235" green="0.2470588235" blue="0.2470588235" alpha="1" colorSpace="deviceRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="bottom" secondItem="T2k-0W-t6M" secondAttribute="bottom" id="AAP-FH-PKH"/>
+                        <constraint firstAttribute="height" constant="64" id="OPR-Xz-dLC"/>
+                        <constraint firstAttribute="trailing" secondItem="T2k-0W-t6M" secondAttribute="trailing" id="eS1-Zl-RfW"/>
+                        <constraint firstItem="T2k-0W-t6M" firstAttribute="leading" secondItem="tVJ-Sn-IRf" secondAttribute="leading" id="ghn-wW-RfS"/>
+                        <constraint firstItem="T2k-0W-t6M" firstAttribute="top" secondItem="tVJ-Sn-IRf" secondAttribute="top" constant="20" id="hrD-Qo-NDE"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dAX-vo-4dM">
+                    <rect key="frame" x="0.0" y="64" width="375" height="50"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EWw-Gq-SGx" customClass="OTSortButton" customModule="OTSortButton">
+                            <rect key="frame" x="0.0" y="0.0" width="125" height="50"/>
+                            <state key="normal" title="Text"/>
+                            <connections>
+                                <action selector="tappedSortButton:" destination="-1" eventType="touchUpInside" id="VVD-Zq-QMo"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ig2-eN-4fB" customClass="OTSortButton" customModule="OTSortButton">
+                            <rect key="frame" x="125" y="0.0" width="125" height="50"/>
+                            <state key="normal" title="Number"/>
+                            <connections>
+                                <action selector="tappedSortButton:" destination="-1" eventType="touchUpInside" id="oWh-Td-38s"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gKP-jp-w51" customClass="OTSortButton" customModule="OTSortButton">
+                            <rect key="frame" x="250" y="0.0" width="125" height="50"/>
+                            <state key="normal" title="Date"/>
+                            <connections>
+                                <action selector="tappedSortButton:" destination="-1" eventType="touchUpInside" id="Q9T-pV-Fwt"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="bottom" secondItem="EWw-Gq-SGx" secondAttribute="bottom" id="2Kh-h9-T0Q"/>
+                        <constraint firstItem="ig2-eN-4fB" firstAttribute="leading" secondItem="EWw-Gq-SGx" secondAttribute="trailing" id="5Zy-d1-HVf"/>
+                        <constraint firstItem="ig2-eN-4fB" firstAttribute="width" secondItem="gKP-jp-w51" secondAttribute="width" id="68f-kl-bI2"/>
+                        <constraint firstAttribute="bottom" secondItem="gKP-jp-w51" secondAttribute="bottom" id="BZM-ZW-fnq"/>
+                        <constraint firstItem="gKP-jp-w51" firstAttribute="top" secondItem="dAX-vo-4dM" secondAttribute="top" id="EXo-KA-OQQ"/>
+                        <constraint firstItem="EWw-Gq-SGx" firstAttribute="leading" secondItem="dAX-vo-4dM" secondAttribute="leading" id="ZNL-YI-58G"/>
+                        <constraint firstItem="ig2-eN-4fB" firstAttribute="top" secondItem="dAX-vo-4dM" secondAttribute="top" id="ZYT-t2-2d1"/>
+                        <constraint firstItem="EWw-Gq-SGx" firstAttribute="top" secondItem="dAX-vo-4dM" secondAttribute="top" id="dVI-l7-WTY"/>
+                        <constraint firstItem="gKP-jp-w51" firstAttribute="leading" secondItem="ig2-eN-4fB" secondAttribute="trailing" id="fsM-93-zR1"/>
+                        <constraint firstItem="EWw-Gq-SGx" firstAttribute="width" secondItem="ig2-eN-4fB" secondAttribute="width" id="tem-WC-ATP"/>
+                        <constraint firstAttribute="trailing" secondItem="gKP-jp-w51" secondAttribute="trailing" id="vDm-3W-umE"/>
+                        <constraint firstAttribute="bottom" secondItem="ig2-eN-4fB" secondAttribute="bottom" id="ynj-IJ-8vh"/>
+                        <constraint firstAttribute="height" constant="50" id="zZo-3v-Yvo"/>
+                    </constraints>
+                </view>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="PpK-Oc-5xn">
+                    <rect key="frame" x="0.0" y="114" width="375" height="553"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="lfb-bk-bg9"/>
+                        <outlet property="delegate" destination="-1" id="n5k-Qw-hxl"/>
+                    </connections>
+                </tableView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="PpK-Oc-5xn" secondAttribute="trailing" id="Azg-A9-FMJ"/>
+                <constraint firstAttribute="bottom" secondItem="PpK-Oc-5xn" secondAttribute="bottom" id="ECV-ko-Ahh"/>
+                <constraint firstItem="PpK-Oc-5xn" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="MYp-JZ-zzI"/>
+                <constraint firstItem="PpK-Oc-5xn" firstAttribute="top" secondItem="dAX-vo-4dM" secondAttribute="bottom" id="ReY-Me-Pyc"/>
+                <constraint firstItem="tVJ-Sn-IRf" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="Vid-Dr-xYC"/>
+                <constraint firstAttribute="trailing" secondItem="dAX-vo-4dM" secondAttribute="trailing" id="dzW-WT-p9K"/>
+                <constraint firstAttribute="trailing" secondItem="tVJ-Sn-IRf" secondAttribute="trailing" id="fyP-kZ-wLB"/>
+                <constraint firstItem="dAX-vo-4dM" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="mVt-3w-tDW"/>
+                <constraint firstItem="tVJ-Sn-IRf" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="qgh-ln-Orr"/>
+                <constraint firstItem="dAX-vo-4dM" firstAttribute="top" secondItem="tVJ-Sn-IRf" secondAttribute="bottom" id="sqN-Q7-GnV"/>
+            </constraints>
+        </view>
+    </objects>
+</document>
