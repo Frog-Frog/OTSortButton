@@ -11,10 +11,12 @@
  
 ## Usage
 1.Set OTSortButton to Custom Class and Module of your UIButton. 
+
 ![2017-09-15 21 10 54](https://user-images.githubusercontent.com/20692907/30481581-6a2e9166-9a5a-11e7-939d-ccec96b11136.png)
 
 
 The appearance can be set with IBInspectable.
+
 ![2017-09-15 21 27 45](https://user-images.githubusercontent.com/20692907/30482111-c25eb6fc-9a5c-11e7-9d21-50924081d4a6.png)
 
 2.Import and connect IBOutlet
@@ -46,26 +48,27 @@ yourSortButton.sortKey = "yourKey"
 			let key = sortButton.sortKey
                 
 			switch sortButton.sortType {
-				case .none:
+			case .none:
                     
            		sortButton.sortType = .ascend
            		// Sort ascend here.
            		//e.g. sortedArray = yourArray.sorted(by: { $0[key]! < $1[key]! })
         
-            	case .ascend:
+       		case .ascend:
                 
            		sortButton.sortType = .descend
            		// Sort descend here.
                	//e.g. sortedArray = yourArray.sorted(by: { $0[key]! > $1[key]! })
                	    
-             	case .descend:
+            case .descend:
                   
 				sortButton.sortType = .none
             	// Undo here.
             	//e.g. sortedArray = yourArray     
-        	}
+        		
+			}
    		} else {
-       		sortButton.sortType = .none
+       			sortButton.sortType = .none
       	}
 	}
 	yourView.reloadData()
