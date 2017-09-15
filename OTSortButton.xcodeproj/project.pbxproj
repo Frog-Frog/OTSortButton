@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		044AC1C01F6B38820094E476 /* OTSortButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 044AC1BE1F6B38820094E476 /* OTSortButton.swift */; };
 		044AC1C11F6B38830094E476 /* OTSortButtonImages.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 044AC1BF1F6B38820094E476 /* OTSortButtonImages.xcassets */; };
-		044AC1C91F6B38930094E476 /* OTSortButton.h in Headers */ = {isa = PBXBuildFile; fileRef = 044AC1C41F6B38930094E476 /* OTSortButton.h */; };
+		044AC1C91F6B38930094E476 /* OTSortButton.h in Headers */ = {isa = PBXBuildFile; fileRef = 044AC1C41F6B38930094E476 /* OTSortButton.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		044AC1D61F6B3AD50094E476 /* OTSortButtonTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 044AC1C71F6B38930094E476 /* OTSortButtonTests.swift */; };
 		04F65A991F6AA60500CDB097 /* OTSortButton.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 04F65A8F1F6AA60400CDB097 /* OTSortButton.framework */; };
 		04FF6BFB1F6C13BF00D5C895 /* OTSortButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 044AC1BE1F6B38820094E476 /* OTSortButton.swift */; };
