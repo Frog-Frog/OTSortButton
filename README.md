@@ -44,32 +44,24 @@ yourSortButton.sortKey = "yourKey"
 @IBAction func tappedSortButton(_ sender: OTSortButton) {
 	for sortButton in sortButtonCollection {
 		if sortButton == sender {
-                
 			let key = sortButton.sortKey
-                
 			switch sortButton.sortType {
 			case .none:
-                    
-           		sortButton.sortType = .ascend
-           		// Sort ascend here.
-           		//e.g. sortedArray = yourArray.sorted(by: { $0[key]! < $1[key]! })
-        
-       		case .ascend:
-                
-           		sortButton.sortType = .descend
+				sortButton.sortType = .ascend
+				// Sort ascend here.
+       			//e.g. sortedArray = yourArray.sorted(by: { $0[key]! < $1[key]! })
+    		case .ascend:
+         		sortButton.sortType = .descend
            		// Sort descend here.
-               	//e.g. sortedArray = yourArray.sorted(by: { $0[key]! > $1[key]! })
-               	    
-            case .descend:
-                  
+     	    	//e.g. sortedArray = yourArray.sorted(by: { $0[key]! > $1[key]! })
+      	    case .descend:
 				sortButton.sortType = .none
             	// Undo here.
             	//e.g. sortedArray = yourArray     
-        		
 			}
    		} else {
-       			sortButton.sortType = .none
-      	}
+       		sortButton.sortType = .none
+     	}
 	}
 	yourView.reloadData()
 }
