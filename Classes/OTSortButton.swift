@@ -5,6 +5,7 @@
 //  Created by Tomosuke Okada on 2017/09/14.
 //  Copyright © 2017年 TomosukeOkada. All rights reserved.
 //
+//  https://github.com/PKPK-Carnage/OTSortButton
 
 /**
  [OTSortButton]
@@ -18,8 +19,8 @@
 
 import UIKit
 
-public enum SortButtonType {
-    case normal
+public enum SortType {
+    case none
     case ascend
     case descend
 }
@@ -29,26 +30,30 @@ public class OTSortButton: UIButton {
     
     
     //MARK: Color
-    @IBInspectable public var normalTextColor: UIColor = UIColor.lightGray
-    @IBInspectable public var normalBackgroundColor: UIColor = UIColor.darkGray
+    @IBInspectable public var noneTextColor: UIColor = UIColor.lightGray
+    @IBInspectable public var noneBackgroundColor: UIColor = UIColor.darkGray
+    @IBInspectable public var noneBackgroundImage: UIImage?
     
     @IBInspectable public var ascendTextColor: UIColor = UIColor.black
     @IBInspectable public var ascendBackgroundColor: UIColor = UIColor.white
     @IBInspectable public var ascendImageColor: UIColor = UIColor.black
+    @IBInspectable public var ascendBackgroundImage: UIImage?
     
     @IBInspectable public var descendTextColor: UIColor = UIColor.black
     @IBInspectable public var descendBackgroundColor: UIColor = UIColor.white
     @IBInspectable public var descendImageColor: UIColor = UIColor.black
+    @IBInspectable public var descendBackgroundImage: UIImage?
     
     //MARK: Type
-    public var sortType: SortButtonType = .normal {
+    public var sortType: SortType = .none {
         didSet {
-            if sortType == .normal {
+            if sortType == .none {
                 
-                backgroundColor = normalBackgroundColor
-                setImage(normalImage, for: .normal)
-                setTitleColor(normalTextColor, for: .normal)
+                backgroundColor = noneBackgroundColor
+                setImage(noneImage, for: .normal)
+                setTitleColor(noneTextColor, for: .normal)
                 tintColor = UIColor.clear
+                setBackgroundImage(noneBackgroundImage, for: .normal)
                 
             } else if sortType == .ascend {
                 
@@ -56,6 +61,7 @@ public class OTSortButton: UIButton {
                 setImage(ascendImage, for: .normal)
                 setTitleColor(ascendTextColor, for: .normal)
                 tintColor = ascendImageColor
+                setBackgroundImage(ascendBackgroundImage, for: .normal)
                 
             } else if sortType == .descend {
                 
@@ -63,6 +69,7 @@ public class OTSortButton: UIButton {
                 setImage(descendImage, for: .normal)
                 setTitleColor(descendTextColor, for: .normal)
                 tintColor = descendImageColor
+                setBackgroundImage(descendBackgroundImage, for: .normal)
         
             }
         }
@@ -75,7 +82,7 @@ public class OTSortButton: UIButton {
     //MARK: Image
     private let ascendImage = UIImage(named: "ots_sort_ascend", in: Bundle(for: OTSortButton.self), compatibleWith: nil)!.withRenderingMode(.alwaysTemplate)
     private let descendImage = UIImage(named: "ots_sort_descend", in: Bundle(for: OTSortButton.self), compatibleWith: nil)!.withRenderingMode(.alwaysTemplate)
-    private let normalImage = UIImage(named: "ots_sort_normal", in: Bundle(for: OTSortButton.self), compatibleWith: nil)!.withRenderingMode(.alwaysTemplate)
+    private let noneImage = UIImage(named: "ots_sort_none", in: Bundle(for: OTSortButton.self), compatibleWith: nil)!
     
     
     //MARK: - Initialize
@@ -91,7 +98,7 @@ public class OTSortButton: UIButton {
     
     private func initialize() {
         
-        sortType = .normal
+        sortType = .none
         
         transform = CGAffineTransform(scaleX: -1.0, y: 1.0)
         titleLabel?.transform = CGAffineTransform(scaleX: -1.0, y: 1.0)
