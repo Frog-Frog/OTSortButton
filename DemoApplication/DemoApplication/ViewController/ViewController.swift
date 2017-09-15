@@ -64,7 +64,7 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     
     func generateRandomString(length: Int) -> String {
         
-        let alphabet = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
+        let alphabet = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
         let upperBound = UInt32(alphabet.characters.count)
         
         return String((0..<length).map { _ -> Character in
@@ -110,7 +110,7 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
                 let dataKey = sortButton.sortKey
                 
                 switch sortButton.sortType {
-                case .normal:
+                case .none:
                     
                     sortButton.sortType = .ascend
                     
@@ -134,13 +134,13 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
                 
                 case .descend:
                     
-                    sortButton.sortType = .normal
+                    sortButton.sortType = .none
                     
                     sortedArray = dataArray
                     
                 }
             } else {
-                sortButton.sortType = .normal
+                sortButton.sortType = .none
             }
         }
         
