@@ -27,8 +27,7 @@ import OTSortButton
 @IBOutlet var sortButtonCollection: [OTSortButton]!
 ```
 
-3.Set sort key
-If you want to set the key on the button, please set it as the sort key
+3.If you want to set the key on the button, please set it as the sort key
 
 ```swift
 
